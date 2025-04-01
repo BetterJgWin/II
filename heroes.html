@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Героите</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+ body {
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page {
+        background-color: #1e1e1e;
+        width: 80%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow: hidden;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    .heroes-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .hero {
+        width: 18%;  /* Ширината може да се коригира за да побере повече герои на ред */
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    button {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+
+    .prev-btn {
+    display: block;
+    margin-top: 10px; /* Разстояние между последната снимка и бутона */
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+</style>
+<body>
+    <div class="book">
+        <div class="page" id="page4">
+            <h1>Героите на историята</h1>
+            <div class="hero">
+                <h2>Джо</h2>
+                <img src="images/joe.jpg" alt="Джо" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Зак</h2>
+                <img src="images/zac.jpg" alt="Зак" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Леон</h2>
+                <img src="images/leon.jpg" alt="Леон" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Елси</h2>
+                <img src="images/elsie.jpg" alt="Елси" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Гордън</h2>
+                <img src="images/gordon.jpg" alt="Гордън" class="hero-image">
+            </div>
+
+            <div class="hero">
+                <h2>Лийла</h2>
+                <img src="images/leela.jpg" alt="Лийла" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Тобиас</h2>
+                <img src="images/tobias.jpg" alt="Тобиас" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Рейчъл</h2>
+                <img src="images/rachel.jpg" alt="Рейчъл" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Грейс</h2>
+                <img src="images/grace.jpg" alt="Грейс" class="hero-image">
+            </div>
+            <div class="hero">
+                <h2>Мира</h2>
+                <img src="images/mira.jpg" alt="Зак" class="hero-image">
+            </div>
+            <button class="prev-btn" onclick="window.location.href='final.html'">Предишна страница</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
